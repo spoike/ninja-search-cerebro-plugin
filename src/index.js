@@ -22,7 +22,7 @@ const Preview = ({ninja, actions}) => (
       <img src={`http:${ninja.imagePortraitUrl}`} style={{objectFit: 'contain', height: '40vh'}} />
     </div>
     <KeyboardNav>
-      <KeyboardNavItem onSelect={() => { console.log(actions); actions.open(`phone:${ninja.phoneNumber.replace(/ /g, '')}`); }} >
+      <KeyboardNavItem onSelect={() => { console.log(actions); actions.open(`tel:${ninja.phoneNumber.replace(/ /g, '')}`); }} >
         <Icon icon={'phone'} />
         {ninja.phoneNumber}
       </KeyboardNavItem>
